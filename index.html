@@ -462,7 +462,9 @@ if(str==name){
 	alert("欢迎您"+name);
 }else{
 	alert("很抱歉!您不是"+name+"不允许进入");
-	window.close()
+	window.opener=null;
+window.open('','_self');
+window.close();
 }
  var u = navigator.userAgent;
 if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1||u.indexOf('iPhone') > -1||u.indexOf('Windows Phone') > -1||navigator.userAgent.indexOf("iPad")>-1) {
