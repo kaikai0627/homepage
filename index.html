@@ -463,8 +463,7 @@ if(str==name){
 	alert("欢迎您"+name);
 }else{
 	alert("很抱歉!您不是"+name+"不允许进入");
-window.opener = null;
-window.close();
+WeixinJSBridge.call('closeWindow');
 }
 }
  $(function()
