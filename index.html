@@ -38,7 +38,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body onload="mt()" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -455,6 +455,8 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
+	function mt(){	
+		alert("进来了");
 	var name = "刘曼婷";
 var str=prompt("请输入您的姓名？");
 if(str==name){
@@ -462,6 +464,7 @@ if(str==name){
 }else{
 	alert("很抱歉!您不是"+name+"不允许进入");
 window.close();
+}
 }
  $(function()
  {
